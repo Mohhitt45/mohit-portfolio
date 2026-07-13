@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mohit Agrawal | AI Engineer | LLM Developer | Data Scientist</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta name="description"
+    content="Mohit Agrawal - AI Engineer and Data Scientist specializing in LLMs, RAG, Machine Learning, Computer Vision, and AI-powered applications.">
+
+    <meta name="keywords"
+    content="AI Engineer, Generative AI, LLM, RAG, Machine Learning, Data Scientist, LangChain, Python">
+
+    <meta name="author"
+    content="Mohit Agrawal">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+
+            font-family:'Poppins',sans-serif;
+
+            background:#0f172a;
+
+            color:white;
+
+            padding-top:80px;
+
+        }
+
+        .navbar{
+
+            background:#111827;
+
+            box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+        }
+
+        .navbar-brand{
+
+            font-size:1.4rem;
+
+            font-weight:700;
+
+            letter-spacing:1px;
+
+        }
+
+        .nav-link{
+
+            color:white !important;
+
+            margin-left:18px;
+
+            transition:.3s;
+
+        }
+
+        .nav-link:hover{
+
+            color:#38bdf8 !important;
+
+        }
+
+        .resume-btn{
+
+            margin-left:20px;
+
+            border-radius:50px;
+
+            padding:8px 22px;
+
+            font-weight:600;
+
+        }
+
+        section{
+
+            padding:100px 0;
+
+        }
+
+        #hero{
+
+        background:linear-gradient(135deg,#0f172a,#1e293b);
+
+        }
+
+        #hero h1{
+
+        line-height:1.2;
+
+        }
+
+        #hero img{
+
+        transition:.4s;
+
+        }
+
+        #hero img:hover{
+
+        transform:scale(1.03);
+
+        }
+
+        #about{
+
+        background:#111827;
+
+        }
+
+        #about .card{
+
+        border-radius:20px;
+
+        transition:.3s;
+
+        }
+
+        #about .card:hover{
+
+        transform:translateY(-8px);
+
+        box-shadow:0 10px 25px rgba(56,189,248,.25);
+
+        }
+
+        #experience{
+
+        background:#0f172a;
+
+        }
+
+
+        #experience .card{
+
+        border-radius:20px;
+
+        transition:.3s;
+
+        }
+
+
+        #experience .card:hover{
+
+        transform:translateY(-8px);
+
+        box-shadow:0 10px 30px rgba(56,189,248,.2);
+
+        }
+
+        .project-card{
+
+        border-radius:20px;
+
+        overflow:hidden;
+
+        transition:.4s;
+
+        }
+
+
+        .project-card img{
+
+        height:220px;
+
+        object-fit:cover;
+
+        }
+
+
+        .project-card:hover{
+
+        transform:translateY(-10px);
+
+        box-shadow:0 15px 30px rgba(56,189,248,.25);
+
+        }
+
+        #skills{
+
+        background:#111827;
+
+        }
+
+
+        .skill-card{
+
+        border-radius:20px;
+
+        transition:.3s;
+
+        }
+
+
+        .skill-card:hover{
+
+        transform:translateY(-8px);
+
+        }
+
+
+        .skill-badge{
+
+        background:#1e293b;
+
+        color:white;
+
+        padding:8px 14px;
+
+        margin:5px;
+
+        border-radius:20px;
+
+        font-size:.85rem;
+
+        display:inline-block;
+
+        }
+
+        #contact{
+
+        background:#111827;
+
+        }
+
+
+        .contact-card{
+
+        border-radius:25px;
+
+        }
+
+
+        .contact-card a:hover{
+
+        color:#38bdf8 !important;
+
+        }
+
+        footer{
+
+        border-top:1px solid rgba(255,255,255,.1);
+
+        }
+
+
+        .footer-icon{
+
+        display:inline-flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        width:45px;
+
+        height:45px;
+
+        border-radius:50%;
+
+        background:#1e293b;
+
+        color:white;
+
+        font-size:20px;
+
+        margin:0 8px;
+
+        transition:.3s;
+
+        }
+
+
+        .footer-icon:hover{
+
+        background:#38bdf8;
+
+        color:#0f172a;
+
+        transform:translateY(-5px);
+
+        }
+
+
+
+        .back-top{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+background:#38bdf8;
+
+color:#0f172a;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+font-size:20px;
+
+        }
+
+
+        .back-top:hover{
+
+        opacity:.8;
+
+        }
+
+        .fade-up{
+
+        animation:fadeUp 1s ease;
+
+        }
+
+
+        @keyframes fadeUp{
+
+        from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+        }
+
+
+        to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#top">
+<span class="text-info">
+Mohit
+</span>
+ Agrawal
+
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse justify-content-end" id="menu">
+
+<ul class="navbar-nav align-items-lg-center">
+
+<li class="nav-item">
+<a class="nav-link" href="#hero">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#experience">Experience</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+<li class="nav-item">
+
+<a href="resume.pdf"
+
+class="btn btn-info resume-btn"
+
+target="_blank">
+
+Resume
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero Section will come here in Step 2 -->
+<section id="hero" class="min-vh-100 d-flex align-items-center fade-up">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<!-- Left Side -->
+
+<div class="col-lg-6 text-center text-lg-start">
+
+<span class="badge bg-info text-dark px-3 py-2 mb-3">
+👋 Welcome to my Portfolio
+</span>
+
+<h1 class="display-3 fw-bold">
+
+Hi, I'm
+
+<span class="text-info">
+Mohit Agrawal
+</span>
+
+</h1>
+
+<h3 class="fw-light mb-4">
+
+AI Engineer • LLM Developer • Data Scientist
+
+</h3>
+
+<p class="lead text-light opacity-75">
+
+I build AI-powered applications using Large Language Models, Retrieval-Augmented Generation (RAG), Machine Learning, Computer Vision, and FastAPI. Passionate about solving real-world problems through intelligent software and data-driven solutions.
+
+</p>
+
+<div class="mt-4">
+
+<a href="resume.pdf"
+class="btn btn-info btn-lg me-3"
+target="_blank">
+
+<i class="bi bi-download"></i>
+
+Resume
+
+</a>
+
+<a href="#projects"
+class="btn btn-outline-light btn-lg">
+
+View Projects
+
+</a>
+
+</div>
+
+<div class="mt-5 d-flex justify-content-center justify-content-lg-start gap-3">
+
+<a href="https://github.com/Mohhitt45"
+target="_blank"
+class="btn btn-dark">
+
+<i class="bi bi-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/mohit-agrawal45"
+target="_blank"
+class="btn btn-primary">
+
+<i class="bi bi-linkedin"></i>
+
+</a>
+
+<a href="https://medium.com/@agrawalmohit.ma"
+target="_blank"
+class="btn btn-success">
+
+<i class="bi bi-medium"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Right Side -->
+
+<div class="col-lg-6 text-center mt-5 mt-lg-0">
+
+<img
+src="images/profile.jpg"
+class="img-fluid rounded-circle border border-5 border-info shadow"
+style="max-width:380px;"
+alt="Mohit Agrawal">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="py-5">
+
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<!-- Left Side -->
+
+<div class="col-lg-7">
+
+<h6 class="text-info text-uppercase fw-bold mb-3">
+About Me
+</h6>
+
+<h2 class="display-5 fw-bold mb-4">
+Building Intelligent AI Solutions for Real-World Problems
+</h2>
+
+<p class="text-light opacity-75 fs-5">
+
+I'm <strong>Mohit Agrawal</strong>, an AI Engineer and Data Scientist currently working on the <strong>Nagpur Metro Rail Project</strong>. I enjoy building AI-powered applications using Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Machine Learning, Computer Vision, and FastAPI.
+
+</p>
+
+<p class="text-light opacity-75">
+
+My experience includes developing AI Resume Parsers, Multi-PDF RAG Assistants, AI Inventory Management Agents, forecasting models, Power BI dashboards, and intelligent automation solutions. I enjoy converting complex business problems into scalable AI products.
+
+</p>
+
+<div class="row mt-4">
+
+<div class="col-md-6">
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+Python & Machine Learning
+</p>
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+Large Language Models (LLMs)
+</p>
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+Retrieval-Augmented Generation (RAG)
+</p>
+
+</div>
+
+<div class="col-md-6">
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+FastAPI & REST APIs
+</p>
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+SQL & PostgreSQL
+</p>
+
+<p>
+<i class="bi bi-check-circle-fill text-info me-2"></i>
+Power BI & Data Analytics
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Right Side -->
+
+<div class="col-lg-5">
+
+<div class="row g-4">
+
+<div class="col-6">
+
+<div class="card bg-dark text-white border-info h-100 text-center">
+
+<div class="card-body">
+
+<h2 class="text-info fw-bold">
+4
+</h2>
+
+<p class="mb-0">
+Years Experience
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-6">
+
+<div class="card bg-dark text-white border-info h-100 text-center">
+
+<div class="card-body">
+
+<h2 class="text-info fw-bold">
+10+
+</h2>
+
+<p class="mb-0">
+AI Projects
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-6">
+
+<div class="card bg-dark text-white border-info h-100 text-center">
+
+<div class="card-body">
+
+<h2 class="text-info fw-bold">
+13K+
+</h2>
+
+<p class="mb-0">
+LinkedIn Followers
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-6">
+
+<div class="card bg-dark text-white border-info h-100 text-center">
+
+<div class="card-body">
+
+<h2 class="text-info fw-bold">
+10+
+</h2>
+
+<p class="mb-0">
+Medium Articles
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience" class="py-5">
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h6 class="text-info text-uppercase fw-bold">
+Professional Experience
+</h6>
+
+<h2 class="display-5 fw-bold">
+My Career Journey
+</h2>
+
+</div>
+
+
+
+<div class="row justify-content-center">
+
+
+<!-- Highbar -->
+
+<div class="col-lg-10 mb-4">
+
+<div class="card bg-dark text-white shadow border-0">
+
+<div class="card-body p-4">
+
+
+<div class="d-flex justify-content-between flex-wrap">
+
+<div>
+
+<h3 class="text-info">
+AI/ML & BI Developer
+</h3>
+
+<h5>
+Highbar Technocrat
+</h5>
+
+<p class="opacity-75">
+Client: Maharashtra Metro Rail Corporation Ltd. (Nagpur)
+</p>
+
+</div>
+
+
+<span class="badge bg-info text-dark align-self-start">
+March 2025 - Present
+</span>
+
+
+</div>
+
+
+<hr>
+
+
+<ul class="opacity-75">
+
+<li>
+Developed and maintained 10+ operational dashboards for AFC, OCC, CRM, revenue, ridership, and station performance using Power BI.
+</li>
+
+<li>
+Automated daily data ingestion, validation, and reporting workflows using SQL and Python.
+</li>
+
+<li>
+Built forecasting models for passenger demand and revenue planning.
+</li>
+
+<li>
+Implemented anomaly detection logic to identify unusual passenger flow and operational deviations.
+</li>
+
+<li>
+Designed KPI dashboards supporting senior management decision-making.
+</li>
+
+</ul>
+
+
+<div>
+
+<span class="badge bg-secondary me-2">
+Power BI
+</span>
+
+<span class="badge bg-secondary me-2">
+Python
+</span>
+
+<span class="badge bg-secondary me-2">
+SQL
+</span>
+
+<span class="badge bg-secondary">
+Machine Learning
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- BambooBox -->
+
+
+<div class="col-lg-10 mb-4">
+
+<div class="card bg-dark text-white shadow border-0">
+
+<div class="card-body p-4">
+
+
+<div class="d-flex justify-content-between flex-wrap">
+
+
+<div>
+
+<h3 class="text-info">
+Database Operations Analyst
+</h3>
+
+
+<h5>
+BambooBox
+</h5>
+
+<p class="opacity-75">
+Bangalore (Product Based Company)
+</p>
+
+</div>
+
+
+<span class="badge bg-info text-dark align-self-start">
+January 2025 - March 2025
+</span>
+
+
+</div>
+
+
+<hr>
+
+
+<ul class="opacity-75">
+
+<li>
+Performed data enrichment and data mining using tools like Apollo and Lusha.
+</li>
+
+<li>
+Cleaned, processed, and validated large datasets for lead generation.
+</li>
+
+<li>
+Optimized data pipelines to improve data quality and usability.
+</li>
+
+<li>
+Maintained data integrity and governance standards.
+</li>
+
+</ul>
+
+
+<div>
+
+<span class="badge bg-secondary me-2">
+SQL
+</span>
+
+<span class="badge bg-secondary me-2">
+Data Mining
+</span>
+
+<span class="badge bg-secondary">
+Data Quality
+</span>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Samatrix -->
+
+<div class="col-lg-10 mb-4">
+
+<div class="card bg-dark text-white shadow border-0">
+
+<div class="card-body p-4">
+
+
+<div class="d-flex justify-content-between flex-wrap">
+
+<div>
+
+<h3 class="text-info">
+Data Science & Machine Learning Engineer
+</h3>
+
+<h5>
+Samatrix Consulting Pvt. Ltd.
+</h5>
+
+<p class="opacity-75">
+Gurgaon
+</p>
+
+</div>
+
+
+<span class="badge bg-info text-dark align-self-start">
+July 2024 - December 2024
+</span>
+
+
+</div>
+
+
+<hr>
+
+
+<ul class="opacity-75">
+
+<li>
+Built time-series and regression forecasting models to predict business trends.
+</li>
+
+<li>
+Performed data cleaning, preprocessing, and feature engineering using Python.
+</li>
+
+<li>
+Improved forecast reliability through machine learning techniques.
+</li>
+
+<li>
+Created Power BI and Tableau dashboards to communicate analytical insights.
+</li>
+
+
+</ul>
+
+
+<div>
+
+<span class="badge bg-secondary me-2">
+Python
+</span>
+
+<span class="badge bg-secondary me-2">
+Scikit-learn
+</span>
+
+<span class="badge bg-secondary">
+Forecasting
+</span>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Starlink -->
+
+<div class="col-lg-10 mb-4">
+
+<div class="card bg-dark text-white shadow border-0">
+
+<div class="card-body p-4">
+
+
+<h3 class="text-info">
+Data Analyst / Machine Learning Engineer
+</h3>
+
+
+<h5>
+Starlink Technology Pvt. Ltd.
+</h5>
+
+<p class="opacity-75">
+Pune
+</p>
+
+
+
+<hr>
+
+
+<ul class="opacity-75">
+
+<li>
+Built predictive and demand forecasting models using Python, SQL, and Scikit-learn.
+</li>
+
+<li>
+Performed EDA, feature engineering, and statistical analysis.
+</li>
+
+<li>
+Developed time-series models using historical datasets.
+</li>
+
+<li>
+Created automated Tableau dashboards for trend analysis.
+</li>
+
+
+</ul>
+
+
+<div>
+
+<span class="badge bg-secondary me-2">
+Python
+</span>
+
+<span class="badge bg-secondary me-2">
+SQL
+</span>
+
+<span class="badge bg-secondary">
+Machine Learning
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="py-5">
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h6 class="text-info text-uppercase fw-bold">
+Projects
+</h6>
+
+<h2 class="display-5 fw-bold">
+Featured AI Projects
+</h2>
+
+<p class="text-light opacity-75">
+AI applications, machine learning systems, and data-driven solutions
+</p>
+
+</div>
+
+
+
+<div class="row g-4">
+
+
+
+<!-- Project 1 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow border-0 project-card fade-up">
+
+
+<img src="images/projects/resume-parser.jpg"
+class="card-img-top"
+alt="AI Resume Parser">
+
+
+<div class="card-body d-flex flex-column">
+
+
+<h5 class="card-title text-info">
+AI Resume Parser using LLMs
+</h5>
+
+
+<p class="card-text opacity-75">
+
+Built an AI-powered resume analysis application using Python, Streamlit, LangChain, Hugging Face embeddings, and LLMs to extract skills, experience, education, and generate intelligent candidate insights.
+
+</p>
+
+
+<div class="mb-3">
+
+<span class="badge bg-secondary">Python</span>
+
+<span class="badge bg-secondary">LangChain</span>
+
+<span class="badge bg-secondary">LLM</span>
+
+<span class="badge bg-secondary">FAISS</span>
+
+</div>
+
+
+<div class="mt-auto">
+
+<a href="https://mohhitt45-ai-resume-parser.hf.space/"
+target="_blank"
+class="btn btn-info btn-sm me-2">
+
+Live Demo
+
+</a>
+
+
+<a href="https://github.com/Mohhitt45/AI-Resume-Parser"
+target="_blank"
+class="btn btn-outline-light btn-sm">
+
+GitHub
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Project 2 -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow border-0 project-card fade-up">
+
+
+<img src="images/projects/rag.jpg"
+class="card-img-top"
+alt="RAG Assistant">
+
+
+<div class="card-body d-flex flex-column">
+
+
+<h5 class="card-title text-info">
+Retrieval-Augmented Generation (RAG) based PDF Question Answering System 
+</h5>
+
+
+<p class="card-text opacity-75">
+
+Built a production-ready Retrieval-Augmented Generation (RAG) application for intelligent PDF question answering using LangChain, Hugging Face, FAISS, FastAPI, Docker, and Streamlit.
+</p>
+
+
+<div class="mb-3">
+
+<span class="badge bg-secondary">
+LangChain
+</span>
+
+<span class="badge bg-secondary">
+RAG
+</span>
+
+<span class="badge bg-secondary">
+FAISS
+</span>
+
+
+</div>
+
+
+<div class="mt-auto">
+
+<a href="https://drive.google.com/file/d/1fyzN5jN55RmQjzXTKoO3lP6gUs5hFicn/view?usp=drivesdk"
+target="_blank"
+class="btn btn-info btn-sm me-2">
+Watch Demo
+</a>
+
+
+<a href="https://github.com/Mohhitt45/RAG-PDF-QA"
+target="_blank"
+class="btn btn-outline-light btn-sm">
+GitHub
+</a>
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Project 3 -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow border-0 project-card fade-up">
+
+
+<img src="images/projects/inventory.jpg"
+class="card-img-top"
+alt="AI Inventory">
+
+
+<div class="card-body d-flex flex-column">
+
+
+<h5 class="card-title text-info">
+AI Inventory Management Agent
+</h5>
+
+
+<p class="card-text opacity-75">
+
+Built an AI agent using FastAPI, LangChain, OpenAI GPT, PostgreSQL, and React that performs inventory search, stock checking, supplier lookup, and order workflows through intelligent tool execution.
+
+</p>
+
+
+<div class="mb-3">
+
+<span class="badge bg-secondary">
+FastAPI
+</span>
+
+<span class="badge bg-secondary">
+OpenAI
+</span>
+
+<span class="badge bg-secondary">
+PostgreSQL
+</span>
+
+</div>
+
+
+<div class="mt-auto">
+
+
+<a href="https://inventory-order-management-lyart.vercel.app/"
+target="_blank"
+class="btn btn-info btn-sm me-2">
+Live Demo
+</a>
+
+
+<a href="https://github.com/Mohhitt45/inventory-order-management"
+target="_blank"
+class="btn btn-outline-light btn-sm">
+GitHub
+</a>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="py-5">
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h6 class="text-info text-uppercase fw-bold">
+Technical Skills
+</h6>
+
+<h2 class="display-5 fw-bold">
+My Technology Stack
+</h2>
+
+<p class="text-light opacity-75">
+Technologies and frameworks used for building AI, ML, and data-driven applications.
+</p>
+
+</div>
+
+
+
+<div class="row g-4">
+
+
+
+<!-- Programming -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+<div class="card-body p-4">
+
+<h4 class="text-info">
+<i class="bi bi-code-square"></i>
+Programming
+</h4>
+
+
+<span class="badge skill-badge">
+Python
+</span>
+
+<span class="badge skill-badge">
+SQL
+</span>
+
+<span class="badge skill-badge">
+Java
+</span>
+
+<span class="badge skill-badge">
+C++
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Machine Learning -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+<div class="card-body p-4">
+
+
+<h4 class="text-info">
+
+<i class="bi bi-cpu"></i>
+
+Machine Learning
+
+</h4>
+
+
+<span class="badge skill-badge">
+Regression
+</span>
+
+<span class="badge skill-badge">
+Classification
+</span>
+
+<span class="badge skill-badge">
+Clustering
+</span>
+
+<span class="badge skill-badge">
+Time Series Forecasting
+</span>
+
+<span class="badge skill-badge">
+Feature Engineering
+</span>
+
+<span class="badge skill-badge">
+Hyperparameter Tuning
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Deep Learning -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+
+<div class="card-body p-4">
+
+
+<h4 class="text-info">
+
+<i class="bi bi-diagram-3"></i>
+
+Deep Learning
+
+</h4>
+
+
+<span class="badge skill-badge">
+TensorFlow
+</span>
+
+
+<span class="badge skill-badge">
+PyTorch
+</span>
+
+
+<span class="badge skill-badge">
+Neural Networks
+</span>
+
+
+<span class="badge skill-badge">
+LSTM
+</span>
+
+
+<span class="badge skill-badge">
+Transformers
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Generative AI -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+
+<div class="card-body p-4">
+
+
+<h4 class="text-info">
+
+<i class="bi bi-stars"></i>
+
+Generative AI & NLP
+
+</h4>
+
+
+<span class="badge skill-badge">
+OpenAI GPT
+</span>
+
+
+<span class="badge skill-badge">
+LangChain
+</span>
+
+
+<span class="badge skill-badge">
+Hugging Face
+</span>
+
+
+<span class="badge skill-badge">
+BERT
+</span>
+
+
+<span class="badge skill-badge">
+spaCy
+</span>
+
+
+<span class="badge skill-badge">
+RAG
+</span>
+
+
+<span class="badge skill-badge">
+Embeddings
+</span>
+
+
+<span class="badge skill-badge">
+FAISS
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- Agentic AI -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+
+<div class="card-body p-4">
+
+
+<h4 class="text-info">
+
+<i class="bi bi-robot"></i>
+
+Agentic AI
+
+</h4>
+
+
+<span class="badge skill-badge">
+AI Agents
+</span>
+
+
+<span class="badge skill-badge">
+ReAct
+</span>
+
+
+<span class="badge skill-badge">
+Tool Calling
+</span>
+
+
+<span class="badge skill-badge">
+MCP
+</span>
+
+
+<span class="badge skill-badge">
+Vector Databases
+</span>
+
+
+<span class="badge skill-badge">
+Prompt Engineering
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!-- Frameworks -->
+
+
+<div class="col-lg-4 col-md-6">
+
+<div class="card bg-dark text-white h-100 shadow skill-card fade-up">
+
+
+<div class="card-body p-4">
+
+
+<h4 class="text-info">
+
+<i class="bi bi-server"></i>
+
+Frameworks & Data
+
+</h4>
+
+
+<span class="badge skill-badge">
+FastAPI
+</span>
+
+
+<span class="badge skill-badge">
+Flask
+</span>
+
+
+<span class="badge skill-badge">
+Streamlit
+</span>
+
+
+<span class="badge skill-badge">
+Docker
+</span>
+
+
+<span class="badge skill-badge">
+Git
+</span>
+
+
+<span class="badge skill-badge">
+REST APIs
+</span>
+
+
+<span class="badge skill-badge">
+Power BI
+</span>
+
+
+<span class="badge skill-badge">
+Tableau
+</span>
+
+
+<span class="badge skill-badge">
+PostgreSQL
+</span>
+
+
+<span class="badge skill-badge">
+MySQL
+</span>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+</section>
+
+<section id="contact" class="py-5">
+
+
+<div class="container">
+
+
+<div class="text-center mb-5">
+
+<h6 class="text-info text-uppercase fw-bold">
+Contact
+</h6>
+
+<h2 class="display-5 fw-bold">
+Let's Build Something Together
+</h2>
+
+<p class="text-light opacity-75">
+Feel free to connect with me for AI, Data Science and GenAI opportunities.
+</p>
+
+</div>
+
+
+
+
+<div class="row justify-content-center">
+
+
+
+<div class="col-lg-8">
+
+
+<div class="card bg-dark text-white border-0 shadow contact-card">
+
+
+<div class="card-body p-5 text-center">
+
+
+
+<div class="row g-4 justify-content-center">
+
+
+
+<div class="col-lg-3 col-md-6">
+
+<i class="bi bi-envelope-fill text-info fs-1"></i>
+
+
+<h5 class="mt-3">
+Email
+</h5>
+
+
+<p class="opacity-75">
+agrawalmohit.ma@gmail.com
+</p>
+
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+
+<i class="bi bi-telephone-fill text-info fs-1"></i>
+
+
+<h5 class="mt-3">
+Phone
+</h5>
+
+
+<p class="opacity-75">
++91 9011244748
+</p>
+
+
+</div>
+
+
+
+<div class="col-lg-3 col-md-6">
+
+
+<i class="bi bi-linkedin text-info fs-1"></i>
+
+
+<h5 class="mt-3">
+LinkedIn
+</h5>
+
+
+<a href="https://www.linkedin.com/in/mohit-agrawal45"
+target="_blank"
+class="text-white text-decoration-none">
+
+Connect
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-lg-3 col-md-6">
+
+
+<i class="bi bi-github text-info fs-1"></i>
+
+
+<h5 class="mt-3">
+GitHub
+</h5>
+
+
+<a href="https://github.com/Mohhitt45"
+target="_blank"
+class="text-white text-decoration-none">
+
+View Profile
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<hr class="my-5">
+
+
+
+<a href="resume.pdf"
+target="_blank"
+class="btn btn-info btn-lg px-5">
+
+<i class="bi bi-download"></i>
+
+Download Resume
+
+</a>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<footer class="py-4 bg-dark">
+
+<div class="container text-center">
+
+
+<div class="mb-3">
+
+<a href="https://www.linkedin.com/in/mohit-agrawal45"
+target="_blank"
+class="footer-icon">
+
+<i class="bi bi-linkedin"></i>
+
+</a>
+
+
+<a href="https://github.com/Mohhitt45"
+target="_blank"
+class="footer-icon">
+
+<i class="bi bi-github"></i>
+
+</a>
+
+
+<a href="https://medium.com/@agrawalmohit.ma"
+target="_blank"
+class="footer-icon">
+
+<i class="bi bi-medium"></i>
+
+</a>
+
+</div>
+
+
+
+<p class="text-light opacity-75 mb-0">
+
+© 2026 Mohit Agrawal | AI Engineer
+
+</p>
+
+
+<p class="text-light opacity-50 small">
+
+Building AI Solutions with LLMs, Machine Learning & Data
+
+</p>
+
+
+
+</div>
+
+</footer>
+
+
+
+
+<!-- Back To Top Button -->
+
+<a href="#top"
+class="back-top">
+
+<i class="bi bi-arrow-up"></i>
+
+</a>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
